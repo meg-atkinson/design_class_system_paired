@@ -1,5 +1,5 @@
 import pytest
-from datetime import datetime
+from datetime import date
 from lib.tyre import Tyre
 
 """
@@ -44,5 +44,5 @@ def test_attributes():
     assert tyre.position == "FR"
     assert tyre.pressure == 15.0
     assert tyre.tread_depth == 14
-    assert isinstance(tyre.reading_time, datetime) == True
+    assert isinstance(tyre.reading_time, date) == True
 
